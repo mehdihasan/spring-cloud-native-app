@@ -2,7 +2,9 @@ package me.mh.configserver;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.config.server.EnableConfigServer;
 
+@EnableConfigServer // 22 - defining configuration server
 @SpringBootApplication
 public class ConfigServerApplication {
 
