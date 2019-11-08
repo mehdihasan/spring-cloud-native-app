@@ -29,7 +29,7 @@ public class WeatherAppApplication {
 	
 	
 	// 105
-	@GetMapping("/")
+	@GetMapping("/current/weather")
 	public String getWeather() {
 		return "The current weather is: " + weatherService.getWeather();
 	}
