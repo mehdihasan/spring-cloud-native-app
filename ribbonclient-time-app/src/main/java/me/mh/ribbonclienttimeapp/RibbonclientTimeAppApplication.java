@@ -11,8 +11,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
+import me.mh.config.RibbonTimeConfig;
+
 @RestController // 79
-@RibbonClient(name = "time-service-discoverydisabled") // 80
+@RibbonClient(name = "time-service-discoverydisabled", configuration = RibbonTimeConfig.class) // 80
 @SpringBootApplication()
 public class RibbonclientTimeAppApplication {
 
